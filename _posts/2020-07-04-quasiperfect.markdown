@@ -4,7 +4,7 @@ title:  "Categorizing Quasiperfect Numbers"
 date:   2020-07-04 14:42:34 -0400
 categories: Blog Post
 ---
-Perfect numbers is a named used by Euclid to describe numbers which equal the sum of its proper divisors
+Perfect numbers is a named used by Euclid to describe numbers which equal to the sum of its proper divisors
 
 It is an interesting concept in number theory, as there are a few unsolved problems around this
 
@@ -35,7 +35,7 @@ Today I will give an elementary proof of why odd quasiperfect numbers must be pe
     Now the only numbers with an odd number of divisors are perfect squares
 
         Proof: 
-        Suppose $n$ has priem factorization $n = \displaystyle\prod_{i=1}^j p_i^{r_i}$
+        Suppose $n$ has prime factorization $n = \displaystyle\prod_{i=1}^j p_i^{r_i}$
 
         The number of divisors of $n$ is given by $\tau(n) = \displaystyle\sum_{d\mid n} 1 = \displaystyle\prod_{i=1}^j (r_i + 1)$
 
