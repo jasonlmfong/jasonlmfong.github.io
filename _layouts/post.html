@@ -1,50 +1,55 @@
 ---
 layout: default
 ---
-
-
-<article class="font-sans relative py-24 md:py-28 bg-white overflow-hidden" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-4">
-      <h1
-        class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-gray-800 sm:text-4xl sm:leading-10"
-        itemprop="name headline">
-        {{ page.title | escape }}</h1>
+<!-- page title -->
+<section class="page-title bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Blogs</h1>
+      </div>
     </div>
-    <p class="max-w-prose mx-auto mb-2 text-lg uppercase text-gray-500"><span class="font-bold tracking-wide">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published text-xs" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-      ~
-      {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-      <time class="dt-modified text-sm" datetime="{{ mdate }}" itemprop="dateModified">
-        {{ mdate | date: date_format }}
-      </time>
-      {%- endif -%}
-      {%- if page.author -%}
-      • {% for author in page.author %}
-      <span itemprop="author text-sm" itemscope itemtype="http://schema.org/Person">
-        <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- if forloop.last == false %}, {% endif -%}
-      {% endfor %}
-      {%- endif -%}
-    </span></p>
-    <!-- 
-      Please sign up at https://www.soopr.co to personalize share and reaction buttons
-    -->
-    <div class="max-w-prose text-lg mx-auto mt-4 mb-8 soopr-btn soopr-btn-def" style="min-height: 36px;"></div>
-  </header>
-
-  <div class="prose prose-lg px-4 md:px-0 text-gray-700 mx-auto" itemprop="articleBody">
-    {{ content }}
   </div>
+  <!-- background shapes -->
+  <img src="{{ site.baseurl }}/assets/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+</section>
+<!-- /page title -->
 
-  {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-  {%- endif -%}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="font-tertiary mb-5">{{ page.title | escape }}</h3>
+        <p class="font-secondary">Published on {{ page.date | date: '%b %d, %Y' }} by <span class="text-primary">{{ page.author }}</span
+            class="text-primary"> on {% for tag in page.tags %}<span>{{ tag }} </span>{% endfor %}</p>
+        <div class="content">
+          <img src="{{page.image | relative_url }}" class="img-fluid rounded float-left mr-5 mb-4" alt="{{page.title}}">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+{% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Similar Stories</h2>
+      </div>
+      {% for post in site.posts offset:0 limit:3 %}
+      {% include post.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /blog -->

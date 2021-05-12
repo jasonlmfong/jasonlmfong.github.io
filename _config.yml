@@ -1,48 +1,34 @@
-title: Cookie
-description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-url: https://cookie-demo.netlify.app # change this URL, this is needed for generating right sitemap
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-permalink: "/blog/:title/"
-
+# Build settings
+markdown: kramdown
+permalink: pretty
 plugins:
-  - jekyll-feed
-  - jekyll-postcss
-  - jekyll-seo-tag
-  - jekyll-purgecss
   - jekyll-sitemap
-  - jekyll-minifier
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
 
-css_dir: "assets/css" # defaults to "css"
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
 
-highlighter: rouge
+include:
+  - _pages
 
-collections:
-  posts:
-    output: true
-    permalink: "/blog/:title"
-  pages:
-    output: true
-    permalink: "/:title"
+sass:
+  sass_dir: assets/scss
+  style: compressed
 
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
-
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
-
+# Exclude from processing.
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - package.json
-  - package-lock.json
+  - LICENSE.text
   - README.md
-  - postcss.config.js
-  - purgecss.config.js
-  - tailwind.config.js
-  - .gitignore
-  - vendor
+  - SECURITY.md
