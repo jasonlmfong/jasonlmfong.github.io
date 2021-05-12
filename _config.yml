@@ -1,41 +1,48 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Cookie
+description: > # this means to ignore newlines until "show_excerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+url: https://cookie-demo.netlify.app # change this URL, this is needed for generating right sitemap
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Jason Fong's Math Blog
-email: jasonlmfong@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This blog talks about some of my own work, discussion of problems, and other topics I find interesting. 
-  The contents of this blog are my original work unless otherwise stated.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jasonlmfong
+permalink: "/blog/:title/"
 
-# Build settings
-markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-postcss
+  - jekyll-seo-tag
+  - jekyll-purgecss
+  - jekyll-sitemap
+  - jekyll-minifier
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+css_dir: "assets/css" # defaults to "css"
+
+highlighter: rouge
+
+collections:
+  posts:
+    output: true
+    permalink: "/blog/:title"
+  pages:
+    output: true
+    permalink: "/:title"
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+soopr:
+  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - purgecss.config.js
+  - tailwind.config.js
+  - .gitignore
+  - vendor
