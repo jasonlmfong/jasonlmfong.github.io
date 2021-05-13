@@ -1,50 +1,45 @@
-title: Sleek # your site title
-author: GitHub User
-email: your-email@domain.com # email for form submission, you also have to change it in _js/scripts.js
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://janczizikow.github.io/sleek" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jan_czizikow # replace with your_twitter_username or comment to remove link from footer
-github_username:  janczizikow # replace with your_github_username or comment to remove link from footer
-instagram_username: shanlongjj # replace with your_instagram_username or comment to remove link from footer
-social:
-  name: Your Name
-  links:
-    - https://twitter.com/BenBalter
-    - https://www.facebook.com/ben.balter
-    - https://www.linkedin.com/in/BenBalter
-    - https://plus.google.com/+BenBalter
-    - https://github.com/benbalter
-    - https://keybase.io/benbalter
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-disqus:
-  shortname: janczizikow # to enable comments replace with your_disqus_shortname
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: minimal-categorized
+tagline: A site showing the usage of Jekyll custom theme
+email: email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This website was created as a demonstration for Jekyll custom theme
+  named minimal-categorized. Its main feature is to aggregate posts into
+  categories, witch are easily distinguishable
+baseurl: "/minimal-categorized" # the subpath of your site, e.g. /blog
+url: "https://itsmeaga1n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+author: itsmeaga1n
+twitter:
+  username: itsmeaga1n
+  card: summary
+plugins:
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
-highlighter: rouge # or pygments or null
-theme: jekyll-sleek
+remote_theme: ItsMeaga1n/minimal-categorized
+# Exclude these files from production site
 exclude:
-  - README.md
-  - node_modules
-  - package.json
-  - package-lock.json
+  - CHANGELOG.md
+  - CNAME
   - Gemfile
   - Gemfile.lock
-  - vendor
-  - npm-debug.log
-  - gulpfile.js
-  - sleek.png
-
-include: ['_pages']
-permalink: /:title/
-
-compress_html:
-  clippings: all
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+  - node_modules
