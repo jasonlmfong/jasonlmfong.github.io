@@ -1,0 +1,247 @@
+:root {
+	--main-green: #99b898;
+	--main-orange: #feceab;
+	--main-pink: #ff847c;
+	--main-red: #e84a5f;
+	--main-black: #2a363b;
+	--darker-green: #83ae98;
+	--main-blue: #355c7d;
+	--main-purple: #6c5b7b;
+}
+
+* {
+  font-family: Ariel, sans-serif;
+  margin: 0;
+}
+
+
+#header-nav {
+	background-color: var(--main-green);
+	margin-bottom: 0;
+	border: 0;
+}
+
+a, a:active, a:hover {
+	text-decoration: none;
+}
+
+#nav-list a {
+	font-size: 1.5em;
+	color: var(--main-black);
+}
+#nav-list a:hover {
+	background-color: var(--darker-green);
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border:  2.5px solid var(--darker-green);
+	background-color: var(--main-green);
+}
+
+
+#welcome-section {
+  background-color: var(--main-black);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  grid-column-gap: 4%;
+  grid-row-gap: 4%;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.introduction {
+  font-size: 3em;
+  width: 50%;
+}
+
+h1 {
+  color: white;
+}
+
+.contactbtn {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+ }
+.contactbtn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+@keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+#projects, #mat102-tutorials {
+  background-color: var(--main-blue);
+  padding: 20px;
+}
+
+.project-title {
+	margin-top: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  border-bottom: 2px solid white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+.project-link {
+  background: var(--main-black);
+  border-radius: 3px
+}
+
+img {
+  width: 100%;
+  height: calc(100% - 3.5em);
+  object-fit: cover;
+}
+p {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.project-link:hover p {
+  color: var(--main-orange)
+}
+
+#profile-link {
+  text-align: center;
+  background-color: var(--main-black);
+  width: 90px;
+  height: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 3px
+}
+
+#profile-link:hover {
+  background-color: #be3144
+}
+
+#contact, #mat102-tips {
+  background-color: #2F2A29;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white
+}
+
+#first-line {
+  font-size: 1.7rem
+}
+#second-line {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  height:  100px;
+}
+.contact-details {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.contact-details:hover .bi{
+  color: var(--main-orange);
+}
+
+.contact-details:hover {
+  transform: translateY(12px);
+}
+.bi {
+  color: white;
+  font-size: 2em;
+}
+.bi-at {
+  font-size: 2.3em;
+}
+
+
+.mat102-intro {
+  font-size: 1.2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+}
+
+.mat102-tutorials {
+  background-color: var(--main-purple);
+  padding: 20px;
+}
+.embed-responsive {
+  width: 70%;
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 70%
+  }
+}
