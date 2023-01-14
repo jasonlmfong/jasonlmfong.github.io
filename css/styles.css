@@ -5,8 +5,11 @@
 	--main-red: #e84a5f;
 	--main-black: #2a363b;
 	--darker-green: #83ae98;
-	--main-blue: #355c7d;
+	--main-blue: #4285F4;
+  --darker-blue: #0160D8;
 	--main-purple: #6c5b7b;
+  --main-yellow: #F8EEB0;
+  --darker-yellow: #EEE4C6;
 }
 
 * {
@@ -16,7 +19,7 @@
 
 
 #header-nav {
-	background-color: var(--main-green);
+	background-color: var(--main-blue);
 	margin-bottom: 0;
 	border: 0;
 }
@@ -30,12 +33,35 @@ a, a:active, a:hover {
 	color: var(--main-black);
 }
 #nav-list a:hover {
-	background-color: var(--darker-green);
+	background-color: var(--darker-blue);
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-	border:  2.5px solid var(--darker-green);
-	background-color: var(--main-green);
+.navbar-nav {
+  text-align: right
+}
+
+.navbar-toggle {
+  padding: .8rem 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #212529;
+  background-color: var(--main-blue);
+  border: 2.5px
+}
+.navbar-default .navbar-toggle:focus {
+  background-color: var(--main-blue);
+}
+.navbar-default .navbar-toggle:focus-visible {
+  background-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #ddd;
+}
+
+.navbar-header .icon-bar {
+	border:  2.5px solid var(--darker-blue);
+	background-color: var(--main-blue);
 }
 
 
@@ -145,6 +171,7 @@ img {
   height: calc(100% - 3.5em);
   object-fit: cover;
 }
+
 p {
   text-decoration: none;
   color: white;

@@ -6,3 +6,9 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     document.title = docTitle;
 })
+
+$(document).ready(function () { 
+    $(document).click(function () {
+         $('.navbar-collapse').collapse('hide');
+    });
+})
