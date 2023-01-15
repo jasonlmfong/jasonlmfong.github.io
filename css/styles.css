@@ -4,12 +4,14 @@
 	--main-pink: #ff847c;
 	--main-red: #e84a5f;
 	--main-black: #2a363b;
+  --pure-black: #000000;
 	--darker-green: #83ae98;
 	--main-blue: #4285F4;
   --darker-blue: #0160D8;
 	--main-purple: #6c5b7b;
   --main-yellow: #F8EEB0;
   --darker-yellow: #EEE4C6;
+  --pure-white: #ffffff;
 }
 
 * {
@@ -23,14 +25,23 @@
 	margin-bottom: 0;
 	border: 0;
 }
+.navbar-default .navbar-brand {
+	font-size: 2.0em;
+	color: var(--pure-black);
+}
+.navbar-default .navbar-brand:hover {
+  color: var(--pure-white);
+  background-color: transparent;
+}
 
 a, a:active, a:hover {
 	text-decoration: none;
 }
 
+
 #nav-list a {
 	font-size: 1.5em;
-	color: var(--main-black);
+	color: var(--pure-black);
 }
 #nav-list a:hover {
 	background-color: var(--darker-blue);
@@ -41,7 +52,7 @@ a, a:active, a:hover {
 }
 
 .navbar-toggle {
-  padding: .8rem 1.2rem;
+  padding: 0.3rem 0.6rem;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1;
@@ -53,15 +64,10 @@ a, a:active, a:hover {
   background-color: var(--main-blue);
 }
 .navbar-default .navbar-toggle:focus-visible {
-  background-color: #ddd;
+  background-color: var(--darker-blue);
 }
 .navbar-default .navbar-toggle:hover {
-  background-color: #ddd;
-}
-
-.navbar-header .icon-bar {
-	border:  2.5px solid var(--darker-blue);
-	background-color: var(--main-blue);
+  background-color: var(--darker-blue);
 }
 
 
@@ -78,6 +84,8 @@ a, a:active, a:hover {
 
 .container {
   display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -87,10 +95,12 @@ a, a:active, a:hover {
   grid-row-gap: 4%;
 }
 
-.paragraph {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
+.image-welcome {
+  position: static;
+  z-index: 0;
+  display: block;
+  padding: 0px;
+  width: 230px;
 }
 
 .introduction {
@@ -100,6 +110,12 @@ a, a:active, a:hover {
 
 h1 {
   color: white;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .contactbtn {
@@ -132,23 +148,23 @@ h1 {
   }
 }
 
-#projects, #mat102-tutorials {
-  background-color: var(--main-blue);
+
+#teachings {
+  background-color: var(--main-green);
   padding: 20px;
+  width: 100%;
 }
 
-.project-title {
-	margin-top: 35px;
+.teaching-section-title {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
 }
 
 h2 {
-  color: white;
+  color: var(--main-black);
   font-size: 2.5rem;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--main-black);
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -161,7 +177,7 @@ h2 {
   max-width: 1300px;
   margin: 20px auto;
 }
-.project-link {
+.teaching-link {
   background: var(--main-black);
   border-radius: 3px
 }
@@ -170,6 +186,12 @@ img {
   width: 100%;
   height: calc(100% - 3.5em);
   object-fit: cover;
+}
+
+.teaching-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -183,11 +205,11 @@ p {
   font-size: 1.2em;
   margin-top: 10px;
 }
-.project-link:hover p {
+.teaching-link:hover p {
   color: var(--main-orange)
 }
 
-#profile-link {
+#teaching-profile-link {
   text-align: center;
   background-color: var(--main-black);
   width: 90px;
@@ -198,15 +220,17 @@ p {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   border-radius: 3px
 }
 
-#profile-link:hover {
+#teaching-profile-link:hover {
   background-color: #be3144
 }
 
-#contact, #mat102-tips {
+
+#contact {
   background-color: #2F2A29;
   height: 100vh;
   display: flex;
@@ -249,26 +273,4 @@ p {
 }
 .bi-at {
   font-size: 2.3em;
-}
-
-
-.mat102-intro {
-  font-size: 1.2em;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: normal;
-}
-
-.mat102-tutorials {
-  background-color: var(--main-purple);
-  padding: 20px;
-}
-.embed-responsive {
-  width: 70%;
-}
-@media (max-width: 550px) {
-  html {
-    font-size: 70%
-  }
 }
