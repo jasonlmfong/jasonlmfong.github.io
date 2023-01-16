@@ -26,9 +26,8 @@
       <div id="collapsable-nav" class="collapse navbar-collapse">
         <ul id="nav-list" class="nav navbar-nav navbar-right">
           <li><a class="nav-link" href="#welcome-section">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#teachings">Teaching</a></li>
-          <li><a class="nav-link" href="#other">Other</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul><!-- #nav-list -->
       </div><!-- #collapsable-nav -->
@@ -38,42 +37,39 @@
   <section id="welcome-section">
     <div class="container">
       <div>
-        <img width="320" height="240" src="pics/ode-logo.jpeg" alt="A photo of me" class="image-welcome"/>
+        <img width="320" height="240" src="pics/robot.png" alt="A photo of me" class="image-welcome"/>
       </div>
       <div class="introduction">
-        <h1>Hey, it's Jason</h1>
+        <h1 id="intro">Hey, it's Jason</h1>
         <p class="paragraph">
-          I am a software engineer and tech consultant based in Toronto. 
-          <br />‍ 
-          <br />
-          With 2 years of experience in the industry, I love learning new things and solving problems. 
+          I am a software engineer and tech consultant based in Toronto.
           <br />
           <br />
-          I also enjoy collaborating with new people. Reach out if you would like to connect with me!
+          I enjoy collaborating with people. Reach out if you would like to connect with me!
         </p>
         <a href="#contact" class="contactbtn">get in touch ></a>
       </div>
     </div>
   </section>
 
-  <section id="teachings">
-    <header class="teaching-section-title">
-      <h2>Here are some courses I taught</h2>
+  <section id="projects">
+    <header class="project-section-title">
+      <h2>Here are some projects I worked on</h2>
     </header>
     <div class="grid">
-      <a class="teaching-link" href="mat102.html" target="_blank">
-      <img src="pics/mat102-logo.jpeg" alt="Infinite Hotel Paradox picture">
-      <p class="teaching-title">Intro to Proofs</p></a>
+      <a class="project-link" href="matmult.html">
+      <img src="pics/matmult.png" alt="Matrix Multiply">
+      <p class="project-title">Fast Matrix Multiply</p></a>
 
-      <a class="teaching-link" href="calc2.html" target="_blank">
-      <img src="pics/calc2-logo.jpeg" alt="calculus">
-      <p class="teaching-title">Calculus 2</p></a>
+      <a class="project-link" href="discordbot.html">
+      <img src="pics/discordbot.png" alt="Discord Bot">
+      <p class="project-title">Sage Discord Bot</p></a>
 
-      <a class="teaching-link" href="linalg.html" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Linear_subspaces_with_shading.svg/1024px-Linear_subspaces_with_shading.svg.png" alt="linear algebra">
-      <p class="teaching-title">Linear Algebra</p></a>
+      <a class="project-link" href="drawrecog.html">
+      <img src="pics/drawrecog.png" alt="Robot Thinking About Sketches">
+      <p class="project-title">Drawing Recogniton</p></a>
     </div>
-    <a id="teaching-profile-link" href="teaching.html" target="_blank">
+    <a id="project-profile-link" href="project.html" target="_blank">
       <p>Show all</p>
     </a>
   </section>
@@ -84,11 +80,13 @@
     </div>
     <div id="second-line">Or we can grab a drink</div>
     <div class="contact-links">
-      <a href="mailto:jasonlmfong@gmail.com" class="contact-details" target="_blank">
+      <a href="mailto:jasonlmfong@gmail.com" class="contact-details">
         <i class="bi bi-at"></i>
       </a>
-      <a href="https://github.com/jasonlmfong/" class="contact-details"
-        target="_blank">
+      <a href="https://www.linkedin.com/in/jasonlmfong/" class="contact-details" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/jasonlmfong/" class="contact-details" target="_blank">
         <i class="bi bi-github"></i>
       </a>
       <a href="https://discord.gg/tKkDmzG2nj" class="contact-details" target="_blank">
@@ -97,9 +95,7 @@
     </div>
   </section>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   </body>
