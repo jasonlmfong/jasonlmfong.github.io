@@ -72,7 +72,7 @@ a, a:active, a:hover {
 }
 
 
-#welcome-section {
+#about {
   background-color: var(--main-black);
   width: 100%;
   height: 100vh;
@@ -196,7 +196,7 @@ img {
 }
 
 .zoom:hover {
-  transform: scale(1.1); 
+  transform: scale(1.05); 
 }
 
 .project-title {
@@ -289,7 +289,7 @@ p {
 }
 
 
-#matmult-section {
+#project-section {
   background-color: var(--main-black);
   width: 100%;
   height: 100vh;
@@ -372,23 +372,11 @@ p {
   }
 }
 
-
-#discordbot-section {
+#pictures {
   background-color: var(--main-black);
+  padding: 20px;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-#drawrecog-section {
-  background-color: var(--main-black);
-  width: 100%;
-  height: 100vh;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
