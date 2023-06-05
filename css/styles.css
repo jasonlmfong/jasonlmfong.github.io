@@ -240,6 +240,17 @@ p {
   background-color: var(--main-red)
 }
 
+#pictures {
+  background-color: var(--main-black);
+  padding: 20px;
+  width: 100%;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 #contact {
   background-color: var(--secondary-black);
@@ -372,14 +383,8 @@ p {
   }
 }
 
-#pictures {
-  background-color: var(--main-black);
-  padding: 20px;
-  width: 100%;
-  padding-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+@media (max-width: 550px) {
+  #about {
+    height: 250vh;
+  }
 }
