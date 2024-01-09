@@ -18,9 +18,9 @@ export default function Experience() {
                 <Col md={4}>
                     <h2>Warner Music Group</h2>
                     <p>
-                        Sofware Engineer II
+                        Software Engineer II
                         <br/>
-                        Sep 2023 - Now
+                        Sep 2023 - Present
                     </p>
                 </Col>
                 <Col md={4}>

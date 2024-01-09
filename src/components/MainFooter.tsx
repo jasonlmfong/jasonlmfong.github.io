@@ -9,7 +9,7 @@ export default function MainFooter(props) {
     return (
         <Container fluid>
             <Row className="justify-content-md-center "
-                 style={{minHeight: "30vh", backgroundColor: "#CCCCDD"}}>
+                 style={{minHeight: "15vh", backgroundColor: "#CCCCDD"}}>
                 <Col md={4} className="my-auto">
                     <h2>Contact</h2>
                 </Col>
@@ -18,13 +18,13 @@ export default function MainFooter(props) {
                         <OpenLink href="https://www.linkedin.com/in/jasonlmfong/">
                             <img src={linkedin_logo}
                                  alt="linkedin profile"
-                                 style={{width: "64px"}}/>
+                                 style={{width: "32px"}}/>
                         </OpenLink>
                         {"\t"}
                         <OpenLink href="https://github.com/jasonlmfong">
                             <img src={github_logo}
                                  alt="github profile"
-                                 style={{width: "64px"}}/>
+                                 style={{width: "32px"}}/>
                         </OpenLink>
                     </p>
                     <p style={{fontSize: "12px", textAlign: "center"}}>

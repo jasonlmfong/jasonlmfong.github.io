@@ -18,13 +18,13 @@ export default function Homepage() {
                     </p>
                 </Col>
                 <Col md={5} lg={4} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={tucker} style={{width: "80%"}} alt="me and my neighbour's cat Tucker"/>
+                    <img src={tucker} style={{width: "80%"}} alt="me and my neighbour's cat, Tucker"/>
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#EEEEFF"}}>
                 <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <p>
-                        I'm usually coding something, playing an RPG, reading science fiction, or playing with my pets.
+                        Most of my time is spent coding something, playing an RPG, reading science fiction, or playing with my pets.
                         <br/>
                         <Link to="/projects" push="true">My projects!</Link>
                     </p>
