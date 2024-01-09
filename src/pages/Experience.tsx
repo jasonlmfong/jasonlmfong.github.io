@@ -16,7 +16,7 @@ export default function Experience() {
             </TitleSection>
             <Row className="justify-content-center text-content">
                 <Col md={4}>
-                    <h2>WMG</h2>
+                    <h2>Warner Music Group</h2>
                     <p>
                         Sofware Engineer II
                         <br/>
@@ -34,7 +34,7 @@ export default function Experience() {
             </Row>
             <Row className="justify-content-center text-content">
                 <Col md={4}>
-                    <h2>EY</h2>
+                    <h2>Ernst & Young</h2>
                     <p>
                         Staff Technology Consultant
                         <br/>
@@ -70,7 +70,7 @@ export default function Experience() {
                 </Col>
                 <Col md={4}>
                     <p>
-                    <OpenLink href="https://www.utoronto.ca/">University of Toronto</OpenLink> is a public research university in Toronto.
+                    <OpenLink href="https://www.utoronto.ca/">UofT</OpenLink> is a public research university in Toronto.
                     </p>
                     <p>
                         I was teaching in the Department of Mathematics for close to 2 years.
