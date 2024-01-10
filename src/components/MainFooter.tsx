@@ -28,7 +28,7 @@ export default function MainFooter(props) {
                                     style={{width: "32px"}}/>
                             </OpenLink>
                         </p>
-                        <p style={{fontSize: "12px", textAlign: "center"}}>
+                        <p style={{fontSize: "12px", textAlign: "center", lineHeight: "normal"}}>
                             Email: jasonlmfong[at]gmail[dot]com
                             <br/>
                         </p>
