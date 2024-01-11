@@ -15,7 +15,7 @@ export default function Experience() {
                 <Col md={4}/>
             </TitleSection>
             <Row className="justify-content-center text-content">
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 1}}>
                     <h2>Warner Music Group</h2>
                     <p>
                         Software Engineer II
@@ -23,7 +23,7 @@ export default function Experience() {
                         Sep 2023 - Present
                     </p>
                 </Col>
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 2}}>
                     <p>
                         <OpenLink href="https://www.wmg.com/">WMG</OpenLink> is an American multinational entertainment and record label conglomerate. 
                     </p>
@@ -33,19 +33,20 @@ export default function Experience() {
                 </Col>
             </Row>
             <Row className="justify-content-center text-content">
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 1}}>
                     <h2>Ernst & Young</h2>
                     <p>
                         Staff Technology Consultant
                         <br/>
                         Jul 2021 - Jul 2022
                         <br/>
+                        <br/>
                         Senior Technology Consultant
                         <br/>
                         Aug 2022 - Sep 2023
                     </p>
                 </Col>
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 2}}>
                     <p>
                         <OpenLink href="https://www.ey.com/">EY</OpenLink> is a multinational professional services partnership.
                     </p>
@@ -60,7 +61,7 @@ export default function Experience() {
                 </Col>
             </Row>
             <Row className="justify-content-center text-content">
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 1}}>
                     <h2>University of Toronto</h2>
                     <p>
                         Teaching Assistant
@@ -68,7 +69,7 @@ export default function Experience() {
                         Sep 2019 - Apr 2021
                     </p>
                 </Col>
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 2}}>
                     <p>
                     <OpenLink href="https://www.utoronto.ca/">UofT</OpenLink> is a public research university in Toronto.
                     </p>
@@ -79,7 +80,7 @@ export default function Experience() {
                 </Col>
             </Row>
             <Row className="justify-content-center text-content">
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 1}}>
                     <h2>STEM Work</h2>
                     <p>
                         Teacher
@@ -87,7 +88,7 @@ export default function Experience() {
                         Summer 2018, Summer 2019
                     </p>
                 </Col>
-                <Col md={4}>
+                <Col md={4} lg={{span: 4, order: 2}}>
                     <p>
                         STEM Work is an education center based in Hong Kong focused on STEM extracurricular education. 
                     </p>
