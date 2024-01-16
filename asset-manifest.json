@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c999b2de.css",
-    "main.js": "/static/js/main.81f797cd.js",
+    "main.css": "/static/css/main.12df33d6.css",
+    "main.js": "/static/js/main.2df0bac6.js",
     "static/media/me_and_tucker.png": "/static/media/me_and_tucker.1e33a13afc78514973e8.png",
     "static/media/brownian.gif": "/static/media/brownian.e370b4d8691ece072829.gif",
     "static/media/banff_sky.png": "/static/media/banff_sky.dc7f4f9ce0a1a3c77b2b.png",
@@ -24,16 +24,19 @@
     "static/media/geo_terrain.png": "/static/media/geo_terrain.2fa43d4f2bd3b79652f4.png",
     "static/media/ankylo.png": "/static/media/ankylo.9f5d4aa4cf80c135e568.png",
     "static/media/bob.png": "/static/media/bob.d3480af51f12df6c72d7.png",
+    "static/media/uoft.png": "/static/media/uoft.7250633e31ba62229676.png",
     "static/media/sphere_skull.png": "/static/media/sphere_skull.cf63ec57cbec63f98fc9.png",
     "static/media/roll_ball.png": "/static/media/roll_ball.1555055437118daeeceb.png",
+    "static/media/wmg.png": "/static/media/wmg.03bc6cfdeed74f44d0bc.png",
+    "static/media/ey.png": "/static/media/ey.edf4070ed72f797ea732.png",
+    "static/media/github.svg": "/static/media/github.969d786b282c5705bb37ca56567111b8.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.6bc9b65030ed13b1fd3daf0b9cbe9410.svg",
-    "static/media/github.svg": "/static/media/github.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/index.html",
-    "main.c999b2de.css.map": "/static/css/main.c999b2de.css.map",
-    "main.81f797cd.js.map": "/static/js/main.81f797cd.js.map"
+    "main.12df33d6.css.map": "/static/css/main.12df33d6.css.map",
+    "main.2df0bac6.js.map": "/static/js/main.2df0bac6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c999b2de.css",
-    "static/js/main.81f797cd.js"
+    "static/css/main.12df33d6.css",
+    "static/js/main.2df0bac6.js"
   ]
 }
