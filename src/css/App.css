@@ -42,3 +42,7 @@ p, span, ul {
 .text-content {
     padding: 25px 0 25px 0;
 }
+
+h1, h2, p, ul {
+    color: white;
+}

@@ -9,7 +9,7 @@ export default function MainFooter(props) {
     return (
         <Container fluid>
             <Row className="justify-content-md-center "
-                 style={{minHeight: "15vh", backgroundColor: "#CCCCDD"}}>
+                 style={{minHeight: "15vh", backgroundColor: "#112244"}}>
                 <Col md={4} className="my-auto">
                     <h2>Contact</h2>
                 </Col>

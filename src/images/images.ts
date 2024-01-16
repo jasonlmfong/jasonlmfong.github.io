@@ -4,6 +4,10 @@ import github_logo from "../images/github.svg";
 import tucker from "../images/me_and_tucker.png";
 import bob from "../images/bob.png";
 
+import wmg from "../images/wmg.png";
+import ey from "../images/ey.png";
+import uoft from "../images/uoft.png";
+
 import model from "../images/model_mod.png";
 import geo from "../images/geo_terrain.png";
 import ray_trace_2 from "../images/raytrace.png";
@@ -34,6 +38,10 @@ export {
     
     tucker,
     bob,
+
+    wmg,
+    ey,
+    uoft,
 
     model,
     geo,

@@ -8,7 +8,7 @@ import {tucker, bob} from "../images/images";
 export default function Homepage() {
     return (
         <Container fluid>
-            <PageSection>
+            <PageSection style={{backgroundColor: "#223333"}}>
                 <Col md={5} lg={{span: 4, order: 1}} className="my-auto">
                     <h1>Hey! I'm Jason</h1>
                     <p>
@@ -21,7 +21,7 @@ export default function Homepage() {
                     <img src={tucker} style={{width: "80%"}} alt="me and my neighbour's cat, Tucker"/>
                 </Col>
             </PageSection>
-            <PageSection style={{backgroundColor: "#EEEEFF"}}>
+            <PageSection style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
                     <img src={bob} style={{width: "80%"}} alt="'Bob' mesh"/>
                 </Col>

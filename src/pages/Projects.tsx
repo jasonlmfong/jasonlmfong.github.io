@@ -9,13 +9,13 @@ import {model, geo, ray_trace_2, draw_recog} from "../images/images";
 export default function Projects() {
     return (
         <Container fluid>
-            <TitleSection style={{backgroundColor: "#CCEEEE"}}>
+            <TitleSection>
                 <Col md={4} className="my-auto">
                     <h1>Projects</h1>
                 </Col>
                 <Col md={4}/>
             </TitleSection>
-            <PageSection>
+            <PageSection style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto">
                     <h2>Model Modifier</h2>
                     <p>
@@ -40,7 +40,7 @@ export default function Projects() {
                     <img src={model} style={{width: "80%"}} alt="Armadillo Mesh"/>
                 </Col>
             </PageSection>
-            <PageSection style={{backgroundColor: "#EEEEFF"}}>
+            <PageSection style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
                     <img src={geo} style={{width: "80%"}} alt="Sample Generated Terrain"/>
                 </Col>
@@ -71,7 +71,7 @@ export default function Projects() {
                     </p>
                 </Col>
             </PageSection>
-            <PageSection>
+            <PageSection style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto">
                     <h2>Ray Tracer</h2>
                     <p>
@@ -89,7 +89,7 @@ export default function Projects() {
                     <img src={ray_trace_2} style={{width: "80%"}} alt="Sample Ray Traced Scene"/>
                 </Col>
             </PageSection>
-            <PageSection style={{backgroundColor: "#EEEEFF"}}>
+            <PageSection style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
                     <img src={draw_recog} style={{width: "80%"}} alt="Robot Thinking About Sketches"/>
                 </Col>

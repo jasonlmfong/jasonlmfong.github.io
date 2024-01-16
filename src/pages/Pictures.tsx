@@ -27,13 +27,13 @@ import {
 export default function Pictures() {
     return (
         <Container fluid>
-            <TitleSection style={{backgroundColor: "#EECCEE"}}>
+            <TitleSection>
                 <Col md={4} className="my-auto">
                     <h1>Pictures</h1>
                 </Col>
                 <Col md={4}/>
             </TitleSection>
-            <Row className="justify-content-md-center text-content">
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}} >
                     <img src={board} style={{width: "80%"}} alt="ShenZhen I/O game"/>
                 </Col>
@@ -44,7 +44,7 @@ export default function Pictures() {
                     <img src={DDG0} style={{width: "80%"}} alt="Discrete Differential Geometry 0"/>
                 </Col>
             </Row>
-            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#EEEEFF"}}>
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}}>
                     <img src={meerkats} style={{width: "80%"}} alt="A lot of meerkats"/>
                 </Col>
@@ -55,7 +55,7 @@ export default function Pictures() {
                     <img src={gundam} style={{width: "80%"}} alt="Human sized Gundam model"/>
                 </Col>
             </Row>
-            <Row className="justify-content-md-center text-content">
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}}>
                     <img src={orbit} style={{width: "80%"}} alt="Moon orbiting Earth shader"/>
                 </Col>
@@ -67,7 +67,7 @@ export default function Pictures() {
                 </Col>
             </Row>
 
-            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#EEEEFF"}}>
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}}>
                     <img src={ray_trace_1} style={{width: "80%"}} alt="Ray traced scene with a sphere and a skull"/>
                 </Col>
@@ -79,7 +79,7 @@ export default function Pictures() {
                     <img src={breach} style={{width: "80%"}} alt="Into The Breach"/>
                 </Col>
             </Row>
-            <Row className="justify-content-md-center text-content">
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}}>
                     <img src={training} style={{width: "80%"}} alt="Weights for a neural network"/>
                 </Col>
@@ -90,7 +90,7 @@ export default function Pictures() {
                     <img src={cardboard} style={{width: "80%"}} alt="Geometric object made from cardboard"/>
                 </Col>
             </Row>
-            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#EEEEFF"}}>
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}}>
                     <img src={SL2Z} style={{width: "80%"}} alt="Action of SL(2,Z) group"/>
                 </Col>
