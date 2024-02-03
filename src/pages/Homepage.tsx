@@ -9,16 +9,16 @@ export default function Homepage() {
     return (
         <Container fluid>
             <PageSection style={{backgroundColor: "#223333"}}>
-                <Col md={5} lg={{span: 4, order: 1}} className="my-auto">
+                <Col md={5} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={tucker} style={{width: "80%"}} alt="me and my neighbour's cat, Tucker"/>
+                </Col>
+                <Col md={5} lg={{span: 4, order: 2}} className="my-auto">
                     <h1>Hey! I'm Jason</h1>
                     <p>
                         I am a software engineer based in Toronto.
                         <br/>
                         I like geometry, computer graphics, video games, music, movies, reading, memes, and all kinds of things.
                     </p>
-                </Col>
-                <Col md={5} lg={{span: 4, order: 2}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={tucker} style={{width: "80%"}} alt="me and my neighbour's cat, Tucker"/>
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#222222"}}>

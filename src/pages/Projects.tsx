@@ -16,7 +16,10 @@ export default function Projects() {
                 <Col md={4}/>
             </TitleSection>
             <PageSection style={{backgroundColor: "#223333"}}>
-                <Col md={4} lg={{span: 4, order: 1}} className="my-auto">
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={model} style={{width: "80%"}} alt="Armadillo Mesh"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>Model Modifier</h2>
                     <p>
                         3D Mesh viewer with various shading options, along with multiple subdivision algorithms:
@@ -35,9 +38,6 @@ export default function Projects() {
                     <p>
                         <OpenLink href="https://github.com/jasonlmfong/Model-Modifier">Source code</OpenLink>
                     </p>
-                </Col>
-                <Col md={4} lg={{span: 4, order: 2}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={model} style={{width: "80%"}} alt="Armadillo Mesh"/>
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#222222"}}>
@@ -72,7 +72,10 @@ export default function Projects() {
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#223333"}}>
-                <Col md={4} lg={{span: 4, order: 1}} className="my-auto">
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={ray_trace_2} style={{width: "80%"}} alt="Sample Ray Traced Scene"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>Ray Tracer</h2>
                     <p>
                         Use ray tracing algorithm and principles of physics based rendering to render various features like: 
@@ -84,9 +87,6 @@ export default function Projects() {
                     <p>
                         <OpenLink href="https://github.com/jasonlmfong/Ray-Tracer">Source code</OpenLink>
                     </p>
-                </Col>
-                <Col md={4} lg={{span: 4, order: 2}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={ray_trace_2} style={{width: "80%"}} alt="Sample Ray Traced Scene"/>
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#222222"}}>

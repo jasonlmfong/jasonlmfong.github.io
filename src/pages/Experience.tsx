@@ -16,7 +16,10 @@ export default function Experience() {
                 <Col md={4}/>
             </TitleSection>
             <PageSection style={{backgroundColor: "#223333"}}>
-                <Col md={4} lg={{span: 4, order: 1}} className="my-auto">
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={wmg} style={{width: "80%"}} alt="logo"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>Warner Music Group</h2>
                     <p>
                         <OpenLink href="https://www.wmg.com/">WMG</OpenLink> is an American multinational entertainment and record label conglomerate. 
@@ -24,9 +27,6 @@ export default function Experience() {
                     <p>
                         I work on the Digital Supply Chain, which is responsible for distributing music to the world, through partners like YouTube, Spotify, Apple Music, TikTok, and more!
                     </p>
-                </Col>
-                <Col md={4} lg={{span: 4, order: 2}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={wmg} style={{width: "80%"}} alt="logo"/>
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#222222"}}>
@@ -49,19 +49,18 @@ export default function Experience() {
                 </Col>
             </PageSection>
             <PageSection style={{backgroundColor: "#223333"}}>
-                
-                <Col md={4} lg={{span: 4, order: 1}} className="my-auto">
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={uoft} style={{width: "80%"}} alt="logo"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>University of Toronto</h2>
                     <p>
                     <OpenLink href="https://www.utoronto.ca/">UofT</OpenLink> is a public research university.
                     </p>
                     <p>
-                        I was teaching in the Department of Mathematics for close to 2 years.
+                        I was teaching in the Department of Mathematics for 2 years.
                         I taught topics like mathematical proofs, linear algebra, calculus, differential equations.
                     </p>
-                </Col>
-                <Col md={4} lg={{span: 4, order: 2}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={uoft} style={{width: "80%"}} alt="logo"/>
                 </Col>
             </PageSection>
         </Container>
