@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.12df33d6.css",
-    "main.js": "/static/js/main.2df0bac6.js",
+    "main.js": "/static/js/main.a30dc63d.js",
     "static/media/me_and_tucker.png": "/static/media/me_and_tucker.1e33a13afc78514973e8.png",
     "static/media/brownian.gif": "/static/media/brownian.e370b4d8691ece072829.gif",
     "static/media/banff_sky.png": "/static/media/banff_sky.dc7f4f9ce0a1a3c77b2b.png",
@@ -27,16 +27,16 @@
     "static/media/uoft.png": "/static/media/uoft.7250633e31ba62229676.png",
     "static/media/sphere_skull.png": "/static/media/sphere_skull.cf63ec57cbec63f98fc9.png",
     "static/media/roll_ball.png": "/static/media/roll_ball.1555055437118daeeceb.png",
-    "static/media/wmg.png": "/static/media/wmg.03bc6cfdeed74f44d0bc.png",
+    "static/media/wmg.png": "/static/media/wmg.0376e88cc479099f84a9.png",
     "static/media/ey.png": "/static/media/ey.edf4070ed72f797ea732.png",
     "static/media/github.svg": "/static/media/github.969d786b282c5705bb37ca56567111b8.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.6bc9b65030ed13b1fd3daf0b9cbe9410.svg",
     "index.html": "/index.html",
     "main.12df33d6.css.map": "/static/css/main.12df33d6.css.map",
-    "main.2df0bac6.js.map": "/static/js/main.2df0bac6.js.map"
+    "main.a30dc63d.js.map": "/static/js/main.a30dc63d.js.map"
   },
   "entrypoints": [
     "static/css/main.12df33d6.css",
-    "static/js/main.2df0bac6.js"
+    "static/js/main.a30dc63d.js"
   ]
 }
