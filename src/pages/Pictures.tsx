@@ -4,6 +4,9 @@ import TitleSection from "../components/TitleSection";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {
+    froggie_bob,
+    gargoyle_cel,
+    lantern,
     board, 
     ankylo,
     DDG0,
@@ -33,6 +36,17 @@ export default function Pictures() {
                 </Col>
                 <Col md={4}/>
             </TitleSection>
+            <Row className="justify-content-md-center text-content" style={{backgroundColor: "#222222"}}>
+                <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}} >
+                    <img src={froggie_bob} style={{width: "80%"}} alt="Plush of a frog with a duck float"/>
+                </Col>
+                <Col md={4} lg={{span: 3, order: 2}} style={{textAlign: "center"}}>
+                    <img src={gargoyle_cel} style={{width: "80%"}} alt="Gargoyle mesh rendered with Cel shading"/>
+                </Col>
+                <Col md={4} lg={{span: 3, order: 3}} style={{textAlign: "center"}}>
+                    <img src={lantern} style={{width: "80%"}} alt="Cubes at lantern festival"/>
+                </Col>
+            </Row>
             <Row className="justify-content-md-center text-content" style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}} >
                     <img src={board} style={{width: "80%"}} alt="ShenZhen I/O game"/>
@@ -87,7 +101,7 @@ export default function Pictures() {
                     <img src={naill} style={{width: "80%"}} alt="my cat Naill"/>
                 </Col>
                 <Col md={4} lg={{span: 3, order: 3}} style={{textAlign: "center"}}>
-                    <img src={cardboard} style={{width: "80%"}} alt="Geometric object made from cardboard"/>
+                    <img src={cardboard} style={{width: "80%"}} alt="Geometric object made from cardboard at The Fields Institute"/>
                 </Col>
             </Row>
             <Row className="justify-content-md-center text-content" style={{backgroundColor: "#222222"}}>
