@@ -1,6 +1,6 @@
 import "./css/App.css";
 import React from "react";
-import {HashRouter, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import MainNavBar from "./components/MainNavBar";
 import MainFooter from "./components/MainFooter";
 import ScrollToTop from "./components/ScrollToTop";
@@ -30,24 +30,20 @@ const pages = [
 
 function App() {
     return (
-        <div className="App">
-            <HashRouter>
-                <MainNavBar sites={pages}/>
-                <ScrollToTop/>
-                <Switch>
-                    <Route path="/" exact component={Homepage}/>
-                    {
-                        pages.map(page =>
-                            <Route path={"/" + page.path}
-                                   component={page.component}
-                                   key={page.path}/>
-                        )
-                    }
-                </Switch>
-                <MainFooter/>
-            </HashRouter>
-        </div>
+        <Router>
+            <MainNavBar sites={pages}/>
+            <ScrollToTop/>
+            <Routes>
+                <Route path="/" exact element={<Homepage />} />
+                {
+                    pages.map(page =>
+                    <Route path={"/" + page.path} element={<page.component />} key={page.path}/>
+                    )
+                }
+            </Routes>
+            <MainFooter/>
+        </Router>
     );
-}
+  }
 
 export default App;

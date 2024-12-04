@@ -5,12 +5,12 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@types/react": "^18.2.66",
+    "@types/react": "^18.3.12",
     "bootstrap": "^5.1.3",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.4.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.3"
+    "react-bootstrap": "^2.10.6",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2"
   },
   "scripts": {
     "dev": "vite",
@@ -21,16 +21,16 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
-    "@typescript-eslint/parser": "^6.17.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "gh-pages": "^6.1.1",
-    "typescript": "^5.3.3",
-    "vite": "^5.2.0"
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.16.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.2"
   }
 }
