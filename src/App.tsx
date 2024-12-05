@@ -5,16 +5,10 @@ import MainNavBar from "./components/MainNavBar";
 import MainFooter from "./components/MainFooter";
 import ScrollToTop from "./components/ScrollToTop";
 import Homepage from "./pages/Homepage";
-import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Pictures from "./pages/Pictures";
 
 const pages = [
-    {
-        name: "Experience",
-        path: "experience",
-        component: Experience
-    },
     {
         name: "Projects",
         path: "projects",

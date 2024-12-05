@@ -4,7 +4,7 @@ import TitleSection from "../components/TitleSection";
 import PageSection from "../components/PageSection";
 import Col from "react-bootstrap/Col";
 import OpenLink from "../components/OpenLink";
-import {model, geo, ray_trace_2, draw_recog} from "../images/images";
+import {stm, model, geo, ray_trace_2, draw_recog} from "../images/images";
 
 export default function Projects() {
     return (
@@ -15,6 +15,22 @@ export default function Projects() {
                 </Col>
                 <Col md={4}/>
             </TitleSection>
+            <PageSection style={{backgroundColor: "#222222"}}>
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={stm} style={{width: "80%"}} alt="Armadillo Mesh"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
+                    <h2>RustM32</h2>
+                    <p>
+                        Embedded Rust programs on the STM32F103 microcontroller.
+                        <br/>
+                        Some variety of peripherals.
+                    </p>
+                    <p>
+                        <OpenLink href="https://github.com/jasonlmfong/rustM32">Source code</OpenLink>
+                    </p>
+                </Col>
+            </PageSection>
             <PageSection style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
                     <img src={model} style={{width: "80%"}} alt="Armadillo Mesh"/>

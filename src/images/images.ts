@@ -4,14 +4,11 @@ import github_logo from "../images/github.svg";
 import tucker from "../images/me_and_tucker.png";
 import bob from "../images/bob.png";
 
-import wmg from "../images/experience/wmg.png";
-import ey from "../images/experience/ey.png";
-import uoft from "../images/experience/uoft.png";
-
-import model from "../images/model_mod.png";
-import geo from "../images/geo_terrain.png";
-import ray_trace_2 from "../images/raytrace.png";
-import draw_recog from "../images/drawrecog.png";
+import stm from "../images/projects/stm.png";
+import model from "../images/projects/model_mod.png";
+import geo from "../images/projects/geo_terrain.png";
+import ray_trace_2 from "../images/projects/raytrace.png";
+import draw_recog from "../images/projects/drawrecog.png";
 
 import froggie_bob from "../images/pictures/froggie.png";
 import gargoyle_cel from "../images/pictures/gargoyle.png";
@@ -40,9 +37,7 @@ export {
   github_logo,
   tucker,
   bob,
-  wmg,
-  ey,
-  uoft,
+  stm,
   model,
   geo,
   ray_trace_2,
