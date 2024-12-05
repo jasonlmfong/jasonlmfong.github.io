@@ -4,10 +4,6 @@ import github_logo from "../images/github.svg";
 import tucker from "../images/me_and_tucker.png";
 import bob from "../images/bob.png";
 
-import wmg from "../images/experience/wmg.png";
-import ey from "../images/experience/ey.png";
-import uoft from "../images/experience/uoft.png";
-
 import model from "../images/model_mod.png";
 import geo from "../images/geo_terrain.png";
 import ray_trace_2 from "../images/raytrace.png";
@@ -40,9 +36,6 @@ export {
   github_logo,
   tucker,
   bob,
-  wmg,
-  ey,
-  uoft,
   model,
   geo,
   ray_trace_2,
