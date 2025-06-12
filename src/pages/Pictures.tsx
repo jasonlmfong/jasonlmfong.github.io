@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import TitleSection from "../components/TitleSection";
 import Row from "react-bootstrap/Row";
