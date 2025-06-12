@@ -28,7 +28,7 @@ function App() {
             <MainNavBar sites={pages}/>
             <ScrollToTop/>
             <Routes>
-                <Route path="/" exact element={<Homepage />} />
+                <Route path="/" element={<Homepage />} />
                 {
                     pages.map(page =>
                     <Route path={"/" + page.path} element={<page.component />} key={page.path}/>
