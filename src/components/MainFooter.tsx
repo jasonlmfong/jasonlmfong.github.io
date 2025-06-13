@@ -7,7 +7,7 @@ import {linkedin_logo, github_logo} from "../images/images";
 export default function MainFooter(props) {
     return (
         <Container fluid>
-            <Row className="justify-content-md-center "
+            <Row className="justify-content-md-center"
                  style={{minHeight: "15vh", backgroundColor: "#112244"}}>
                 <Col md={4} className="my-auto">
                     <h2>Contact</h2>

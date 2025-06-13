@@ -28,7 +28,7 @@ export default function Homepage() {
                     <p>
                         Most of my time is spent coding something, playing an RPG, reading science fiction, or playing with my pets.
                         <br/>
-                        <Link to="/projects" push="true">My projects!</Link>
+                        <Link to="/projects">My projects!</Link>
                     </p>
                 </Col>
             </PageSection>

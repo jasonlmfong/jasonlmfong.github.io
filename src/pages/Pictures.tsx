@@ -84,7 +84,6 @@ export default function Pictures() {
                 <Col md={4} lg={{span: 3, order: 1}} style={{textAlign: "center"}}>
                     <img src={ray_trace_1} style={{width: "80%"}} alt="Ray traced scene with a sphere and a skull"/>
                 </Col>
-                
                 <Col md={4} lg={{span: 3, order: 2}} style={{textAlign: "center"}}>
                     <img src={brownian} style={{width: "80%"}} alt="3D Brownian motion"/>
                 </Col>
