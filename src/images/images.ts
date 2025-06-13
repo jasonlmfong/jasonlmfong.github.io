@@ -9,6 +9,7 @@ import model from "../images/projects/model_mod.png";
 import geo from "../images/projects/geo_terrain.png";
 import ray_trace_2 from "../images/projects/raytrace.png";
 import draw_recog from "../images/projects/drawrecog.png";
+import sqliter from "../images/projects/sqliter.png";
 
 import froggie_bob from "../images/pictures/froggie.png";
 import gargoyle_cel from "../images/pictures/gargoyle.png";
@@ -42,6 +43,7 @@ export {
   geo,
   ray_trace_2,
   draw_recog,
+  sqliter,
   froggie_bob,
   gargoyle_cel,
   lantern,

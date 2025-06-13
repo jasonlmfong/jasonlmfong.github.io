@@ -3,7 +3,7 @@ import TitleSection from "../components/TitleSection";
 import PageSection from "../components/PageSection";
 import Col from "react-bootstrap/Col";
 import OpenLink from "../components/OpenLink";
-import {stm, model, geo, ray_trace_2, draw_recog} from "../images/images";
+import {stm, model, geo, ray_trace_2, draw_recog, sqliter} from "../images/images";
 
 export default function Projects() {
     return (
@@ -14,22 +14,6 @@ export default function Projects() {
                 </Col>
                 <Col md={4}/>
             </TitleSection>
-            <PageSection style={{backgroundColor: "#222222"}}>
-                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={stm} style={{width: "80%"}} alt="Armadillo Mesh"/>
-                </Col>
-                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
-                    <h2>RustM32</h2>
-                    <p>
-                        Embedded Rust programs on the STM32F103 microcontroller.
-                        <br/>
-                        Some variety of peripherals.
-                    </p>
-                    <p>
-                        <OpenLink href="https://github.com/jasonlmfong/rustM32">Source code</OpenLink>
-                    </p>
-                </Col>
-            </PageSection>
             <PageSection style={{backgroundColor: "#223333"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
                     <img src={model} style={{width: "80%"}} alt="Armadillo Mesh"/>
@@ -37,16 +21,19 @@ export default function Projects() {
                 <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>Model Modifier</h2>
                     <p>
-                        3D Mesh viewer with various shading options, along with multiple subdivision algorithms:
+                        3D Mesh viewer
                         <ul>
                             <li>
-                                Catmull-Clark subdivision
+                                Implements various subdivion algorithms
                             </li>
                             <li>
-                                Doo-Sabin subdivision
+                                Custom .obj file parser
                             </li>
                             <li>
-                                Loop subdivision
+                                CMake build system
+                            </li>
+                            <li>
+                                Interactive camera controls and visualization options
                             </li>
                         </ul>
                     </p>
@@ -57,27 +44,62 @@ export default function Projects() {
             </PageSection>
             <PageSection style={{backgroundColor: "#222222"}}>
                 <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={stm} style={{width: "80%"}} alt="Armadillo Mesh"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
+                    <h2>RustM32</h2>
+                    <p>
+                        Embedded programs for the STM32F103 microcontroller
+                        <ul>
+                            <li>
+                                Supports various peripherals using GPIO
+                            </li>
+                            <li>
+                                Leverages HAL for hardware control and real time data processing
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <OpenLink href="https://github.com/jasonlmfong/rustM32">Source code</OpenLink>
+                    </p>
+                </Col>
+            </PageSection>
+            <PageSection style={{backgroundColor: "#223333"}}>
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
+                    <img src={sqliter} style={{width: "80%"}} alt="Armadillo Mesh"/>
+                </Col>
+                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
+                    <h2>SQLiter</h2>
+                    <p>
+                        Relational database engine
+                        <ul>
+                            <li>
+                                Supports core SQL commands
+                            </li>
+                            <li>
+                                Equipped with custom query parser
+                            </li>
+                            <li>
+                                Supports multiversion concurrency control
+                            </li>
+                        </ul>
+                    </p>
+                </Col>
+            </PageSection>
+            <PageSection style={{backgroundColor: "#222222"}}>
+                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
                     <img src={geo} style={{width: "80%"}} alt="Sample Generated Terrain"/>
                 </Col>
                 <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>GeoGraphix</h2>
                     <p>
-                        Terrain generator that supports multiple modes of terrain generation:
+                        Terrain generator
                         <ul>
                             <li>
-                                uniform random
+                                Procedural generation with algorithms: Diamond-Square, Perlin Noise, Simplex Noise
                             </li>
                             <li>
-                                flat
-                            </li>
-                            <li>
-                                diamond square algorithm
-                            </li>
-                            <li>
-                                perlin noise algorithm
-                            </li>
-                            <li>
-                                simplex noise algorithm
+                                Configurable parameters for diverse landscape creation
                             </li>
                         </ul>
                     </p>
@@ -93,11 +115,21 @@ export default function Projects() {
                 <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>Ray Tracer</h2>
                     <p>
-                        Use ray tracing algorithm and principles of physics based rendering to render various features like: 
-                        <br/>
-                        lighting, spheres, boxes, materials, and image textures. 
-                        <br/>
-                        With additional support for Bounding Volume Heirarchy, instancing, and anti-aliasing.
+                        Physics based ray tracer
+                        <ul>
+                            <li>
+                                Realistic lighting models with multiple material types: diffuse, reflective, refractive
+                            </li>
+                            <li>
+                                Supports texture mapping for surface detail
+                            </li>
+                            <li>
+                                Supports Bounding Volume Heirarchy, instancing, and anti-aliasing.
+                            </li>
+                            <li>
+                                CUDA acceleration for improved rendering performance on GPUs
+                            </li>
+                        </ul>
                     </p>
                     <p>
                         <OpenLink href="https://github.com/jasonlmfong/Ray-Tracer">Source code</OpenLink>
@@ -111,7 +143,15 @@ export default function Projects() {
                 <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
                     <h2>Drawing Recognition</h2>
                     <p>
-                        A drawing app like Paint, with a Keras model trained on sketch data to guess what the user drew.
+                        Drawing application with sketch recognition
+                        <ul>
+                            <li>
+                                Paint-like drawing interface with intuitive user controls
+                            </li>
+                            <li>
+                                Custom computer vision model for real-time sketch recognition and prediction
+                            </li>
+                        </ul>
                     </p>
                 </Col>
             </PageSection>
