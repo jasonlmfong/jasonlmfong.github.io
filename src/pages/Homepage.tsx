@@ -7,28 +7,20 @@ import {tucker, bob} from "../images/images";
 export default function Homepage() {
     return (
         <Container fluid>
-            <PageSection style={{backgroundColor: "#223333"}}>
+            <PageSection style={{minHeight: "80vh"}}>
                 <Col md={5} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={tucker} style={{width: "80%"}} alt="me and my neighbour's cat, Tucker"/>
+                    <img src={tucker} style={{width: "80%", borderRadius: "50%"}} alt="me and my neighbour's cat, Tucker"/>
                 </Col>
                 <Col md={5} lg={{span: 4, order: 2}} className="my-auto">
                     <h1>Hey! I'm Jason</h1>
                     <p>
-                        I am a software engineer based in Toronto.
+                        I'm a software engineer, open-source contributor, and I sometimes moonlight as a data scientist.
                         <br/>
-                        I like geometry, computer graphics, video games, music, movies, reading, memes, and all kinds of things.
-                    </p>
-                </Col>
-            </PageSection>
-            <PageSection style={{backgroundColor: "#222222"}}>
-                <Col md={4} lg={{span: 4, order: 1}} className="my-auto" style={{textAlign: "center"}}>
-                    <img src={bob} style={{width: "80%"}} alt="'Bob' mesh"/>
-                </Col>
-                <Col md={4} lg={{span: 4, order: 2}} className="my-auto">
-                    <p>
-                        Most of my time is spent coding something, playing an RPG, reading science fiction, or playing with my pets.
                         <br/>
-                        <Link to="/projects">My projects!</Link>
+                        My experiences span distributed systems, microservices, CI/CD pipelines, full stack development, data engineering.
+                        <br/>
+                        <br/>
+                        I like geometry processing, databases, compilers, and abstract algebra.
                     </p>
                 </Col>
             </PageSection>
